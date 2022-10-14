@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "jw-errors"
+version = "0.0.0"
+description = "JW Errors"
+authors = ["Josh Wycuff <Joshua.Wycuff@turner.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "jw_errors"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.1.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

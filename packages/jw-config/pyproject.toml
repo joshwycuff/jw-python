@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "jw-config"
+version = "0.0.0"
+description = "JW Config"
+authors = [ "Josh Wycuff <Joshua.Wycuff@turner.com>",]
+license = "MIT"
+readme = "README.md"
+[[tool.poetry.packages]]
+include = "jw_config"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+
+[tool.poetry.dependencies.jw-errors]
+develop = true
+path = "../jw-errors"
+
+[tool.poetry.dependencies.jw-types]
+develop = true
+path = "../jw-types"
+
+[tool.poetry.dependencies.jw-datatools]
+develop = true
+path = "../jw-datatools"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.1.3"
+coverage = "^6.5.0"
